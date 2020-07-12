@@ -1,4 +1,6 @@
-﻿namespace QrCodeUtility
+﻿using System.Drawing;
+
+namespace QrCodeUtility
 {
     partial class Form1
     {
@@ -75,11 +77,13 @@
             // 
             // lblErrorMessage
             // 
+            this.lblErrorMessage.Font = new System.Drawing.Font("Calibri", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblErrorMessage.AutoSize = true;
             this.lblErrorMessage.Location = new System.Drawing.Point(56, 153);
             this.lblErrorMessage.Name = "lblErrorMessage";
             this.lblErrorMessage.Size = new System.Drawing.Size(0, 15);
             this.lblErrorMessage.TabIndex = 4;
+            this.lblErrorMessage.ForeColor = Color.Red;
             // 
             // Form1
             // 
